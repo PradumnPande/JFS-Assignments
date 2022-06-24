@@ -1,0 +1,99 @@
+ASSIGNMENT-1:
+
+//INSERT:db.movies.insertMany([{},{}..]);//
+1.db.movies.find()
+2.db.movies.find({"writer":"Quentine Tarantino"})
+3.db.movies.find({"actors":"Brad Pitt"})
+4.db.movies.find({"franchise":"The Hobbit"})
+5.db.movies.find({year:{$gt:"1990", {$lt:"2000"}}})
+6.db.movies.find({$or:[{year:{$gt:"2010",{$lt:"2000}}}]})
+ 
+//UPDATE//
+1.db.movies.update({"title":"The Hobbit:An Unexpected Journey"},{{$set:{"synopsis":"A reluctant hobbit, Bilbo Baggins, sets out to the Lonely mountain with a spirited group 
+of dwarves to reclaim their mountain home - and the gold within it - from the dragon Smaug."}})
+2.db.movies.update({"title":"The Hobbit:The Desolation of Smaug"},{{$set:{"synopsis":"The dwarves ,along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor,
+their homeland,from Smaug. Bilbo Baggins is in possesssion of a mysterious and magical ring."}})
+3.db.movies.update({"movie":"Pulp Fiction"},{{$push:{"actors:"Samuel L.Jackson"}})
+
+//SEARCH//
+1.db.movies.find({"synopsis":{$regex:"Bilbo"}})
+2.db.movies.find({"synopsis":{$regex:"Gandalf"}})
+3.db.movies.find({$and:[{"synopsis":{$regex:"Bilbo"}},{"synopsis":"{$not:/Gandalf/}}]})
+4.db.movies.find({$or:[{"synopsis":{$regex:"dwarves"}},{"synopsis":{$regex:"hobbit"}}]})
+5.db.movies.find({$and:[{"synopsis":{$regex:"gold"}},{"synopsis":{$regex:"dragon"}}]})
+
+//DELET//
+1.db.movies.remove({"title":"Pee Wee Herman's Big Adventure"})
+2.db.movies.remove({"title":"Avatar"})
+
+//RELATIONSHIPS//
+
+db.users.insertMany([{},{}])
+db.posts.insertMany([{},{}])
+db.comments.insertMany([{},{}])
+1.db.users.find()
+2.db.posts.find()
+3.db.posts.find({"username":"GoodGuyGreg"})
+4.db.posts.find({"username":"ScumbagSteve"})
+5.db.comments.find()
+6.db.comments.find({username"GoodGuyGreg"})
+7.db.comments.find({username"ScumbagSteve"})
+
+ASSIGNMENT-2:
+
+// IMPORT ZIP.JSON//
+mongoimport --db population --collection zipcodes --file C:\Users\ASUS\Downloads\zip.json
+1.db.zipcodes.find({$and:[{city:{$regex:"ATLANTA"}}, {state:{$regex:"GA"}}]})
+2.db.zipcodes.aggregate([{$match:{city:"ATLANTA" ,state:"GA"}}])
+3.db.zipcodes.aggregate([ {$group:{_id:{city:"$city"},count:{$count:{}}}},{$match:{__id:{city:"ATLANTA"}}}])
+4.db.zipcodes.aggregate([ {$group:{_id:{city:"$city"},totalpop:{$sum:"$pop"}}},{$match:{__id:{city:"ATLANTA"}}}])
+5.db.zipcodes.aggregate([ {$group:{_id:"$state" ,totalpop:{$sum:"$pop"}}}])
+6.db.zipcodes.aggregate([ {$group:{_id:"$state" ,totalpop:{$sum:"$pop"}}},{$sort:{totalpop:-1}}])
+7.db.zipcodes.aggregate([ {$group:{_id:"$state" ,totalpop:{$sum:"$pop"}}},{$sort:{totalpop:-1}},{$limit:3}])
+8.db.zipcodes.aggregate([ {$group:{_id:{state:"$state",city:"$city" ,totalpop:{$sum:"$pop"}}}])
+9.db.zipcodes.aggregate([ {$group:{_id:{state:"$state",city:"$city",totalpop:{$sum:"$pop"}}},{$sort:{totalpop:-1}}])
+10.db.zipcodes.aggregate([ {$group:{_id: {state:"$state",city:"$city",totalpop:{$sum:"$pop"}}},{$sort:{totalpop:-1}},{$limit:3}])
+11.db.zipcodes.aggregate([ {$group:{_id: {state:"$state",city:"$city",totalpop:{$sum:"$pop"}}},{$sort:{totalpop:-1}},{$limit:3}])
+12.db.zipcodes.aggregate([{$match:{_id:{state:"TX"}}},{$group:{_id: {state:"$state",totalpop:{$sum:"$pop"}}},{$sort:{totalpop:-1}},{$limit:3}])
+13.db.zipcodes.aggregate([ {$group:{_id:"$state" ,avgpop:{$avg:"$pop"}}}])
+14.db.zipcodes.aggregate([ {$group:{_id:"$state" ,avgpop:{$avg:"$pop"}}},{$sort:{avgpop:-1}},{$limit:3}])
+
+
+//ASSIGNMENT-3//
+//IMPORT RESTAURANT.JSON//
+mongoimport --db restaurants --collection addresses --file C:\Users\ASUS\Downloads\restaurants.json
+1.db.addresses.find()
+2.db.addresses.find({}{"restaurant_id":1,"name":1,"borough":1,"cuisine":1})
+3.db.addresses.find({}{ "_id":0"restaurant_id":1,"name":1,"borough":1,"cuisine":1})
+4.db.addresses.find({}{"restaurant_id":1,"name":1,"borough":1,"cuisine":1})
+5.db.addresses.find({"borough":"Bronx"}).limit(5)
+6.db.addresses.find({"borough":"Bronx"})
+7.db.addresses.find({"borough":"Bronx"}).skip(5).limit(5)
+8.db.addresses.find({"grades.score" : {"$gt" : 90}})
+9.db.addresses.find({$and : [{"grades.score" : {"$gt" : 80}},{"grades.score" : {"$lt" : 100}}]})
+10.db.addresses.find({"address.coord.0" : {$lt : -95.754168}})
+11.db.addresses.find({$and : [{"cuisine" : {$ne : "American "}}, {"address.coord.0" : {$lt : -65.754168}}, {"grades.score" : {$gt : 70}}]})
+12.db.addresses.find({$and : [{"cuisine" : {$ne : "American "}}, {"address.coord.1" : {$lt : -65.754168}}, {"grades.score" : {$gt : 70}}]})
+13.db.addresses.find({$and : [{"cuisine" : {$ne : "American "}}, {"grades.grade" : "A"}, {"borough" : {$ne : "Brooklyn "}}]}).sort({cuisine : -1})
+14.db.addresses.find({"name" : { $regex: /^Wil.*/}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+15.db.addresses.find({"name" : { $regex: /.*ces$/}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+16.db.addresses.find({"name" : { $regex: /Reg/}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+17.db.addresses.find({borough: "Bronx", cuisine: {$in: ["American ","Chinese"]}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+18.db.addresses.find({$or: [{"borough": "Staten Island"}, {"borough": "Bronxor Brooklyn"}, {"borough": "Queens"}]}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+19.db.addresses.find( {borough: {$nin: ["Staten Island","Queens","Bronx","Brooklyn"]}} , {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+20.db.addresses.find({"grades.score": {$lte: 10}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+21.db.addresses.find({$nor: [{cuisine: {$in: ["American ","Chinese"]}},{name: /^Wil.*/}]},{_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+22.db.addresses.find({"grades" : {$elemMatch: {"date": ISODate("2014-08-11T00:00:00Z"), "grade":"A", "score":11}}}, {_id:0, restaurant_id:1, name:1, grades:1})
+23.db.addresses.find({$and: [{"grades.1.grade":"A"}, {"grades.1.score": 9}, {"grades.1.date": ISODate("2014-08-11T00:00:00Z")}]},{_id:0, restaurant_id:1, name:1, grades:1}).pretty()
+24.db.addresses.find({$and : [{"address.coord.1": {$gt : 42}},{"address.coord.1": {$lte : 52}}]}, {_id:0, restaurant_id:1, name:1, address:1})
+25.db.addresses.find({},{_id:0, name:1}).sort( {name: 1})
+26.db.raddresses.find({},{_id:0, name:1}).sort( {name: -1})
+27.db.addresses.find({}, {_id:0, cuisine:1, borough:1}).sort({cuisine: 1, borough: -1})
+28.db.addresses.find({"address.street": {$regex: /Street/}}).pretty()
+db.addresses.find({"address.street": {$ne: {$regex: /Street/}}}).pretty()
+29.db.addresses.find({"address.coord": {$type: "double"}}, {_id:0, address:1})
+30.db.addresses.find({"grades": {$elemMatch: {"score": {$mod: [7,0]}}}},{_id:0, restaurant_id:1, name:1, grades:1})
+31.db.addresses.find({name: {$regex: /mon/}},{_id:0, name:1, borough:1, "address.coord":1, cuisine:1})
+32.db.addresses.find({name: {$regex: /^Mad.*/}},{_id:0, name:1, borough:1, "address.coord":1, cuisine:1})
+
+
