@@ -1,0 +1,436 @@
+2022-02-28 10:11:53.294  INFO 9004 --- [restartedMain] c.cognizant.EmployeeServiceApplication   : Starting EmployeeServiceApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 9004 (D:\cts\ADMJF022\stage4\MS\ms6-DB-config-server\employee-service\target\classes started by Shanmugapriya in D:\cts\ADMJF022\stage4\MS\ms6-DB-config-server\employee-service)
+2022-02-28 10:11:53.300 DEBUG 9004 --- [restartedMain] c.cognizant.EmployeeServiceApplication   : Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-02-28 10:11:53.301  INFO 9004 --- [restartedMain] c.cognizant.EmployeeServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-02-28 10:11:53.432  INFO 9004 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:6666
+2022-02-28 10:11:53.433  INFO 9004 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Located environment: name=employee-service, profiles=[default], label=null, version=a7f4d5aa0ed3efaaeaa5839169bbe22cfb35cc41, state=null
+2022-02-28 10:11:53.518  INFO 9004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 10:11:53.519  INFO 9004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 10:11:54.864  INFO 9004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-28 10:11:54.946  INFO 9004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
+2022-02-28 10:11:55.404  INFO 9004 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fd57fbd8-1f51-30eb-9bdc-444bb42d0e3f
+2022-02-28 10:11:56.237  INFO 9004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-02-28 10:11:56.251  INFO 9004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-28 10:11:56.251  INFO 9004 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-28 10:11:56.466  INFO 9004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-28 10:11:56.467  INFO 9004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2946 ms
+2022-02-28 10:11:56.934  INFO 9004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-28 10:11:57.018  INFO 9004 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-28 10:11:57.301  INFO 9004 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-28 10:11:57.465  INFO 9004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-28 10:11:58.468  INFO 9004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-28 10:11:58.498  INFO 9004 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-28 10:11:59.404  INFO 9004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-28 10:11:59.419  INFO 9004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 10:11:59.885  WARN 9004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-28 10:12:00.470  WARN 9004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-28 10:12:01.231  INFO 9004 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-28 10:12:02.098  WARN 9004 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-28 10:12:02.235  INFO 9004 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-28 10:12:02.604  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-28 10:12:02.616  INFO 9004 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-28 10:12:02.659  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-28 10:12:02.660  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-28 10:12:02.660  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-28 10:12:02.661  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-28 10:12:02.661  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-28 10:12:02.661  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-28 10:12:02.662  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-28 10:12:03.015  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-28 10:12:03.020  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-28 10:12:03.029  INFO 9004 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-28 10:12:03.037  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1646023323036 with initial instances count: 3
+2022-02-28 10:12:03.045  INFO 9004 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2022-02-28 10:12:03.046  INFO 9004 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1646023323046, current=UP, previous=STARTING]
+2022-02-28 10:12:03.050  INFO 9004 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001: registering service...
+2022-02-28 10:12:03.094  INFO 9004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-02-28 10:12:03.096  INFO 9004 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-02-28 10:12:03.180  INFO 9004 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001 - registration status: 204
+2022-02-28 10:12:04.440  INFO 9004 --- [restartedMain] c.cognizant.EmployeeServiceApplication   : Started EmployeeServiceApplication in 14.435 seconds (JVM running for 15.88)
+2022-02-28 10:13:02.297  INFO 9004 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-28 10:13:02.363  INFO 9004 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-28 10:13:02.367  INFO 9004 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-02-28 10:13:02.448  INFO 9004 --- [http-nio-9001-exec-1] com.cognizant.service.EmployeeService    : start
+2022-02-28 10:13:03.070 DEBUG 9004 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : select employee0_.eid as eid1_0_0_, employee0_.age as age2_0_0_, employee0_.department_id as departme3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from employee employee0_ where employee0_.eid=?
+2022-02-28 10:13:03.161 TRACE 9004 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1001]
+2022-02-28 10:13:03.800 TRACE 9004 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_0_] : [INTEGER]) - [31]
+2022-02-28 10:13:03.801 TRACE 9004 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_0_] : [INTEGER]) - [100]
+2022-02-28 10:13:03.821 TRACE 9004 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:13:03.823 TRACE 9004 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_0_] : [VARCHAR]) - [priya]
+2022-02-28 10:13:03.828 TRACE 9004 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_0_] : [DOUBLE]) - [8888.0]
+2022-02-28 10:13:03.949 DEBUG 9004 --- [http-nio-9001-exec-1] com.cognizant.service.EmployeeService    : Employees is :Employee(eid=1001, name=priya, gender=Female, age=31, salary=8888.0, departmentId=100)
+2022-02-28 10:13:03.950  INFO 9004 --- [http-nio-9001-exec-1] com.cognizant.service.EmployeeService    : end
+2022-02-28 10:13:33.118  INFO 9004 --- [http-nio-9001-exec-2] com.cognizant.service.EmployeeService    : start
+2022-02-28 10:13:33.682 DEBUG 9004 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select employee0_.eid as eid1_0_, employee0_.age as age2_0_, employee0_.department_id as departme3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from employee employee0_
+2022-02-28 10:13:33.686 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1001]
+2022-02-28 10:13:33.687 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [31]
+2022-02-28 10:13:33.688 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [100]
+2022-02-28 10:13:33.688 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:13:33.689 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [priya]
+2022-02-28 10:13:33.690 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [8888.0]
+2022-02-28 10:13:33.690 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1002]
+2022-02-28 10:13:33.691 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [21]
+2022-02-28 10:13:33.694 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [200]
+2022-02-28 10:13:33.695 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:13:33.696 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [riya]
+2022-02-28 10:13:33.697 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [8888.0]
+2022-02-28 10:13:33.697 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1003]
+2022-02-28 10:13:33.698 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [23]
+2022-02-28 10:13:33.698 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [200]
+2022-02-28 10:13:33.698 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Male]
+2022-02-28 10:13:33.699 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [smith]
+2022-02-28 10:13:33.699 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [77788.0]
+2022-02-28 10:13:33.699 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1004]
+2022-02-28 10:13:33.700 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [25]
+2022-02-28 10:13:33.700 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [300]
+2022-02-28 10:13:33.700 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:13:33.701 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [diya]
+2022-02-28 10:13:33.701 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [4444.0]
+2022-02-28 10:13:33.702 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1005]
+2022-02-28 10:13:33.703 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [24]
+2022-02-28 10:13:33.704 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [400]
+2022-02-28 10:13:33.704 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:13:33.705 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [sriya]
+2022-02-28 10:13:33.706 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [6666.0]
+2022-02-28 10:13:33.730 DEBUG 9004 --- [http-nio-9001-exec-2] com.cognizant.service.EmployeeService    : Employees are :[Employee(eid=1001, name=priya, gender=Female, age=31, salary=8888.0, departmentId=100), Employee(eid=1002, name=riya, gender=Female, age=21, salary=8888.0, departmentId=200), Employee(eid=1003, name=smith, gender=Male, age=23, salary=77788.0, departmentId=200), Employee(eid=1004, name=diya, gender=Female, age=25, salary=4444.0, departmentId=300), Employee(eid=1005, name=sriya, gender=Female, age=24, salary=6666.0, departmentId=400)]
+2022-02-28 10:13:33.731  INFO 9004 --- [http-nio-9001-exec-2] com.cognizant.service.EmployeeService    : end
+2022-02-28 10:13:40.717  INFO 9004 --- [http-nio-9001-exec-3] com.cognizant.service.EmployeeService    : start
+2022-02-28 10:13:40.721 DEBUG 9004 --- [http-nio-9001-exec-3] org.hibernate.SQL                        : select employee0_.eid as eid1_0_, employee0_.age as age2_0_, employee0_.department_id as departme3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from employee employee0_
+2022-02-28 10:13:40.724 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1001]
+2022-02-28 10:13:40.728 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [31]
+2022-02-28 10:13:40.729 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [100]
+2022-02-28 10:13:40.730 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:13:40.731 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [priya]
+2022-02-28 10:13:40.731 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [8888.0]
+2022-02-28 10:13:40.732 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1002]
+2022-02-28 10:13:40.733 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [21]
+2022-02-28 10:13:40.733 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [200]
+2022-02-28 10:13:40.734 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:13:40.734 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [riya]
+2022-02-28 10:13:40.735 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [8888.0]
+2022-02-28 10:13:40.735 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1003]
+2022-02-28 10:13:40.736 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [23]
+2022-02-28 10:13:40.736 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [200]
+2022-02-28 10:13:40.737 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Male]
+2022-02-28 10:13:40.737 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [smith]
+2022-02-28 10:13:40.737 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [77788.0]
+2022-02-28 10:13:40.738 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1004]
+2022-02-28 10:13:40.738 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [25]
+2022-02-28 10:13:40.738 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [300]
+2022-02-28 10:13:40.739 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:13:40.740 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [diya]
+2022-02-28 10:13:40.740 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [4444.0]
+2022-02-28 10:13:40.741 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1005]
+2022-02-28 10:13:40.744 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [24]
+2022-02-28 10:13:40.745 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [400]
+2022-02-28 10:13:40.746 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:13:40.747 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [sriya]
+2022-02-28 10:13:40.748 TRACE 9004 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [6666.0]
+2022-02-28 10:13:40.752 DEBUG 9004 --- [http-nio-9001-exec-3] com.cognizant.service.EmployeeService    : Employees are :[Employee(eid=1001, name=priya, gender=Female, age=31, salary=8888.0, departmentId=100), Employee(eid=1002, name=riya, gender=Female, age=21, salary=8888.0, departmentId=200), Employee(eid=1003, name=smith, gender=Male, age=23, salary=77788.0, departmentId=200), Employee(eid=1004, name=diya, gender=Female, age=25, salary=4444.0, departmentId=300), Employee(eid=1005, name=sriya, gender=Female, age=24, salary=6666.0, departmentId=400)]
+2022-02-28 10:13:40.753  INFO 9004 --- [http-nio-9001-exec-3] com.cognizant.service.EmployeeService    : end
+2022-02-28 10:14:40.736  INFO 9004 --- [http-nio-9001-exec-4] com.cognizant.service.EmployeeService    : start
+2022-02-28 10:14:40.741 DEBUG 9004 --- [http-nio-9001-exec-4] org.hibernate.SQL                        : select employee0_.eid as eid1_0_, employee0_.age as age2_0_, employee0_.department_id as departme3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from employee employee0_
+2022-02-28 10:14:40.747 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1001]
+2022-02-28 10:14:40.749 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [31]
+2022-02-28 10:14:40.749 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [100]
+2022-02-28 10:14:40.750 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:14:40.751 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [priya]
+2022-02-28 10:14:40.751 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [8888.0]
+2022-02-28 10:14:40.752 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1002]
+2022-02-28 10:14:40.753 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [21]
+2022-02-28 10:14:40.753 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [200]
+2022-02-28 10:14:40.754 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:14:40.754 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [riya]
+2022-02-28 10:14:40.754 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [8888.0]
+2022-02-28 10:14:40.755 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1003]
+2022-02-28 10:14:40.756 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [23]
+2022-02-28 10:14:40.756 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [200]
+2022-02-28 10:14:40.757 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Male]
+2022-02-28 10:14:40.757 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [smith]
+2022-02-28 10:14:40.758 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [77788.0]
+2022-02-28 10:14:40.758 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1004]
+2022-02-28 10:14:40.759 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [25]
+2022-02-28 10:14:40.759 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [300]
+2022-02-28 10:14:40.760 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:14:40.763 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [diya]
+2022-02-28 10:14:40.766 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [4444.0]
+2022-02-28 10:14:40.767 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([eid1_0_] : [INTEGER]) - [1005]
+2022-02-28 10:14:40.768 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_] : [INTEGER]) - [24]
+2022-02-28 10:14:40.769 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_] : [INTEGER]) - [400]
+2022-02-28 10:14:40.769 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:14:40.770 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_] : [VARCHAR]) - [sriya]
+2022-02-28 10:14:40.771 TRACE 9004 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_] : [DOUBLE]) - [6666.0]
+2022-02-28 10:14:40.775 DEBUG 9004 --- [http-nio-9001-exec-4] com.cognizant.service.EmployeeService    : Employees are :[Employee(eid=1001, name=priya, gender=Female, age=31, salary=8888.0, departmentId=100), Employee(eid=1002, name=riya, gender=Female, age=21, salary=8888.0, departmentId=200), Employee(eid=1003, name=smith, gender=Male, age=23, salary=77788.0, departmentId=200), Employee(eid=1004, name=diya, gender=Female, age=25, salary=4444.0, departmentId=300), Employee(eid=1005, name=sriya, gender=Female, age=24, salary=6666.0, departmentId=400)]
+2022-02-28 10:14:40.776  INFO 9004 --- [http-nio-9001-exec-4] com.cognizant.service.EmployeeService    : end
+2022-02-28 10:14:45.825  INFO 9004 --- [http-nio-9001-exec-9] com.cognizant.service.EmployeeService    : start
+2022-02-28 10:14:45.836 DEBUG 9004 --- [http-nio-9001-exec-9] org.hibernate.SQL                        : select employee0_.eid as eid1_0_0_, employee0_.age as age2_0_0_, employee0_.department_id as departme3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from employee employee0_ where employee0_.eid=?
+2022-02-28 10:14:45.837 TRACE 9004 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1004]
+2022-02-28 10:14:45.840 TRACE 9004 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_0_] : [INTEGER]) - [25]
+2022-02-28 10:14:45.841 TRACE 9004 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_0_] : [INTEGER]) - [300]
+2022-02-28 10:14:45.841 TRACE 9004 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_0_] : [VARCHAR]) - [Female]
+2022-02-28 10:14:45.842 TRACE 9004 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_0_] : [VARCHAR]) - [diya]
+2022-02-28 10:14:45.847 TRACE 9004 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_0_] : [DOUBLE]) - [4444.0]
+2022-02-28 10:14:45.852 DEBUG 9004 --- [http-nio-9001-exec-9] com.cognizant.service.EmployeeService    : Employees is :Employee(eid=1004, name=diya, gender=Female, age=25, salary=4444.0, departmentId=300)
+2022-02-28 10:14:45.852  INFO 9004 --- [http-nio-9001-exec-9] com.cognizant.service.EmployeeService    : end
+2022-02-28 10:15:00.103  INFO 9004 --- [http-nio-9001-exec-2] com.cognizant.service.EmployeeService    : start
+2022-02-28 10:15:00.106 DEBUG 9004 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select employee0_.eid as eid1_0_0_, employee0_.age as age2_0_0_, employee0_.department_id as departme3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from employee employee0_ where employee0_.eid=?
+2022-02-28 10:15:00.108 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1003]
+2022-02-28 10:15:00.110 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([age2_0_0_] : [INTEGER]) - [23]
+2022-02-28 10:15:00.115 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([departme3_0_0_] : [INTEGER]) - [200]
+2022-02-28 10:15:00.117 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([gender4_0_0_] : [VARCHAR]) - [Male]
+2022-02-28 10:15:00.118 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_0_0_] : [VARCHAR]) - [smith]
+2022-02-28 10:15:00.119 TRACE 9004 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([salary6_0_0_] : [DOUBLE]) - [77788.0]
+2022-02-28 10:15:00.123 DEBUG 9004 --- [http-nio-9001-exec-2] com.cognizant.service.EmployeeService    : Employees is :Employee(eid=1003, name=smith, gender=Male, age=23, salary=77788.0, departmentId=200)
+2022-02-28 10:15:00.124  INFO 9004 --- [http-nio-9001-exec-2] com.cognizant.service.EmployeeService    : end
+2022-02-28 10:17:02.669  INFO 9004 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-28 10:18:37.719  INFO 9004 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 32 more
+
+2022-02-28 10:18:37.720  WARN 9004 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-02-28 10:18:37.870  INFO 9004 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-02-28 10:18:37.870  WARN 9004 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-02-28 10:18:39.886  INFO 9004 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-02-28 10:18:39.888  INFO 9004 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2022-02-28 10:18:39.889  INFO 9004 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1646023719889, current=DOWN, previous=UP]
+2022-02-28 10:18:39.889  INFO 9004 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001: registering service...
+2022-02-28 10:18:40.272  INFO 9004 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 10:18:40.288  INFO 9004 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-28 10:18:40.307  INFO 9004 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-28 10:18:40.308  INFO 9004 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-02-28 10:18:41.836  INFO 9004 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 33 more
+
+2022-02-28 10:18:41.837  WARN 9004 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-02-28 10:18:41.842 ERROR 9004 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) [eureka-client-1.10.17.jar:1.10.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_261]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_261]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_261]
+
+2022-02-28 10:18:42.055  INFO 9004 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+2022-02-28 10:18:42.055  WARN 9004 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-02-28 10:18:42.056  INFO 9004 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/host.docker.internal:employee-service:9001 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
